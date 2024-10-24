@@ -6,7 +6,7 @@ bot = telebot.TeleBot(token)
     
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
-    bot.reply_to(message, "Привет! Я твой Telegram бот. Напиши что-нибудь!")
+    bot.reply_to(message, "Привет! Я твой Telegram бот. Напиши что-нибудь?")
     
 @bot.message_handler(commands=['hello'])
 def send_hello(message):
